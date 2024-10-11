@@ -8,6 +8,14 @@ import {
   faViber,
 } from "@fortawesome/free-brands-svg-icons"; // Import from brands
 import AboutMe from "./components/aboutme";
+// import TechnicalSkills from "./components/technicalskills";
+import Hello from "./components/hello";
+
+import GrowButton from "./components/button";
+import TodoList from "./components/todo";
+import CardList from "./components/cardList";
+import Calculator from "./components/calculator";
+import CounterApp from "./components/counter";
 import TechnicalSkills from "./components/technicalskills";
 
 function App() {
@@ -23,7 +31,7 @@ function App() {
 
         <div className="absolute inset-0 h-full w-full bg-orange opacity-95"></div>
 
-        <div className="relative flex items-center justify-center h-full flex-col px-4 sm:px-12 md:px-24 lg:px-48 xl:px-96">
+        <div className="relative flex items-center justify-center h-full flex-col px-4 sm:px-12 md:px-24 lg:px-48 xl:px-96 ">
           <div
             className="rounded-full mb-5"
             style={{
@@ -35,7 +43,7 @@ function App() {
             }}
           ></div>
 
-          <span className="relative inline-block text-5xl sm:text-5xl mb-5 md:text-6xl lg:text-6xl xl:text-5xl font-kaushan text-white before:content-['-'] after:content-['-'] before:px-2 after:px-2 transform -rotate-6 font-bold">
+          <span className=" animate-jiggle relative inline-block text-3xl sm:text-5xl mb-5 md:text-5xl lg:text-5xl xl:text-6xl font-kaushan text-white before:content-['-'] after:content-['-'] before:px-2 after:px-2 transform -rotate-6 font-bold">
             Charles Joshua Lucero
           </span>
 
@@ -102,12 +110,9 @@ function App() {
       <div>
         <AboutMe />
       </div>
-
-      {/* <div>
+      <div>
         <TechnicalSkills />
-      </div> */}
-
-      
+      </div>
     </div>
   );
 }
